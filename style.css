@@ -126,3 +126,18 @@ margin-left: 10px;
 .footer{
 text-decoration: underline;
 }
+
+
+
+.up-arrow{
+    display: flex;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+  }
