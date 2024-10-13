@@ -23,19 +23,43 @@
     ></script>
   </head>
   <body>
-    <div  class="sticky-top">
+    <div class="sticky-top">
       <ul class="nav justify-content-center" style="background-color: #e3f2fd">
         <li class="nav-item">
-          <a class="nav-link" href="#simple-list-item-1">Home</a>
+          <a class="nav-link" href="#home-section">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#simple-list-item-2">Skills</a>
+          <a class="nav-link" href="#skills-section">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#simple-list-item-3">Work</a>
+          <a class="nav-link" href="#work-section">Work</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#simple-list-item-4">About</a>
+          <a class="nav-link" href="#about-section">About</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Projects
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="#crud-project">CRUD Application</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#ajio-project">Ajio Clone</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#weather-project">Weather App</a>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
@@ -47,7 +71,7 @@
       </div>
 
       <div class="box-2">
-        <h1 class="profile-name"><span>I'm, </span>Gokul</h1>
+        <h1 class="profile-name" id="home-section"><span>I'm, </span>Gokul</h1>
         <h4 class="profile-title">Frontend Developer</h4>
         <p class="profile-description">
           Disciplined and enthusiastic developer, interested in providing
@@ -56,11 +80,11 @@
         </p>
       </div>
     </div>
-    <hr class="border-info mb-3" />
+    <!-- <hr class="border-info mb-3" /> -->
 
     <!-- Skills -->
 
-    <div class="tech">
+    <div class="tech" id="skills-section">
       <h2>Technical skills</h2>
       <div class="tech-img">
         <div class="tech-1">
@@ -83,16 +107,26 @@
           <img src="th (2).jpeg" alt="React js" />
           <span>React js</span>
         </div>
+
+        <div class="tech-5">
+          <img src="th (3).jpeg" alt="Bootstrap" />
+          <span>Bootstrap</span>
+        </div>
+
+        <div class="tech-6">
+          <img src="th (4).jpeg" alt="GitHub" />
+          <span>GitHub</span>
+        </div>
       </div>
     </div>
-    <hr class="border-info mb-3" />
+    <!-- <hr class="border-info mb-3" /> -->
 
     <!-- work experinece -->
 
-    <div class="work">
+    <!-- <div class="card"> -->
+    <div class="work" id="work-section">
       <h2>Professional Experience</h2>
-    </div>
-    <div class="card">
+
       <div class="work-title">
         <span> Tata Consultancy Services, <span> chennai</span></span>
       </div>
@@ -155,140 +189,150 @@
         </ul>
       </div>
     </div>
-    <hr class="border-info mb-3" />
+    <!-- <hr class="border-info mb-3" /> -->
 
     <!-- projects -->
 
     <div class="work">
       <h2>Projects</h2>
-    </div>
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-      <div class="col">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">CRUD application (JavaScript)</h5>
-            <p class="card-text">
-              Technologies Used: JavaScript, HTML, CSS(Bootstrap), Local
-              Storage.
-            </p>
-            <ul>
-              <li>
-                Built a CRUD (Create, Read, Update, Delete) application using
-                vanilla JavaScript to manage a dynamic list of tasks. The
-                application allows users to create new entries, edit existing
-                ones, delete tasks, and view the current list of tasks, with
-                data stored persistently using browser Local Storage.
-              </li>
-              <li>
-                Implemented efficient data handling using Local Storage to
-                ensure data persistence across sessions and optimized DOM
-                manipulation to update the UI dynamically without reloading the
-                page.
-              </li>
-            </ul>
-            <a class="icon-link" href="https://github.com/Gokul-E/CRud.git">
-              <svg class="bi" aria-hidden="true">
-                <use xlink:href="#box-seam"></use>
-              </svg>
-              Visit link
-            </a>
-          </div>
-        </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Ajio Ecommerce-clone</h5>
-            <p class="card-text">Technologies Used: JavaScript, HTML, CSS</p>
-            <ul>
-              <li>
-                Developed a fully responsive e-commerce website inspired by
-                AJIO, featuring product catalog browsing, and dynamic filters
-                for categories and pricing. The app provides a seamless shopping
-                experience with easy navigation and responsive design.
-              </li>
-              <li>Product catalog with dynamic filtering (by category)</li>
-              <li>Responsive design for mobile and desktop views</li>
-              <li>Easy-to-navigate user interface with smooth animations</li>
-            </ul>
-            <a
-              class="icon-link"
-              href="https://github.com/Gokul-E/E-com-AJIO.git"
-            >
-              <svg class="bi" aria-hidden="true">
-                <use xlink:href="#box-seam"></use>
-              </svg>
-              Visit link
-            </a>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card" id="crud-project">
+            <div class="card-body">
+              <h5 class="card-title">CRUD application (JavaScript)</h5>
+              <p class="card-text">
+                Technologies Used: JavaScript, HTML, CSS(Bootstrap), Local
+                Storage.
+              </p>
+              <ul>
+                <li>
+                  Built a CRUD (Create, Read, Update, Delete) application using
+                  vanilla JavaScript to manage a dynamic list of tasks. The
+                  application allows users to create new entries, edit existing
+                  ones, delete tasks, and view the current list of tasks, with
+                  data stored persistently using browser Local Storage.
+                </li>
+                <li>
+                  Implemented efficient data handling using Local Storage to
+                  ensure data persistence across sessions and optimized DOM
+                  manipulation to update the UI dynamically without reloading
+                  the page.
+                </li>
+              </ul>
+              <a class="icon-link" href="https://github.com/Gokul-E/CRud.git">
+                <svg class="bi" aria-hidden="true">
+                  <use xlink:href="#box-seam"></use>
+                </svg>
+                Visit link
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Weather Application (React)</h5>
-            <p class="card-text">
-              Technologies Used: React, JavaScript, HTML, CSS(Bootstrap)
-            </p>
-            <ul>
-              <li>
-                • Built a weather forecasting web application using React and
-                OpenWeatherMap API. The app allows users to search for cities
-                and receive real-time weather updates, including temperature,
-                humidity, and weather conditions.
-              </li>
-              <li>
-                Implemented asynchronous API calls to fetch real-time data and
-                handled edge cases for invalid city names
-              </li>
-              <li>
-                Enhanced user experience with dynamic data loading, improving
-                user engagement.
-              </li>
-            </ul>
-            <a
-              class="icon-link"
-              href="https://github.com/Gokul-E/weather-app-react-js.git"
-            >
-              <svg class="bi" aria-hidden="true">
-                <use xlink:href="#box-seam"></use>
-              </svg>
-              Visit link
-            </a>
+        <div class="col">
+          <div class="card" id="ajio-project">
+            <div class="card-body">
+              <h5 class="card-title">Ajio Ecommerce-clone</h5>
+              <p class="card-text">Technologies Used: JavaScript, HTML, CSS</p>
+              <ul>
+                <li>
+                  Developed a fully responsive e-commerce website inspired by
+                  AJIO, featuring product catalog browsing, and dynamic filters
+                  for categories and pricing. The app provides a seamless
+                  shopping experience with easy navigation and responsive
+                  design.
+                </li>
+                <li>Product catalog with dynamic filtering (by category)</li>
+                <li>Responsive design for mobile and desktop views</li>
+                <li>Easy-to-navigate user interface with smooth animations</li>
+              </ul>
+              <a
+                class="icon-link"
+                href="https://github.com/Gokul-E/E-com-AJIO.git"
+              >
+                <svg class="bi" aria-hidden="true">
+                  <use xlink:href="#box-seam"></use>
+                </svg>
+                Visit link
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" id="weather-project">
+            <div class="card-body">
+              <h5 class="card-title">Weather Application (React)</h5>
+              <p class="card-text">
+                Technologies Used: React, JavaScript, HTML, CSS(Bootstrap)
+              </p>
+              <ul>
+                <li>
+                  • Built a weather forecasting web application using React and
+                  OpenWeatherMap API. The app allows users to search for cities
+                  and receive real-time weather updates, including temperature,
+                  humidity, and weather conditions.
+                </li>
+                <li>
+                  Implemented asynchronous API calls to fetch real-time data and
+                  handled edge cases for invalid city names
+                </li>
+                <li>
+                  Enhanced user experience with dynamic data loading, improving
+                  user engagement.
+                </li>
+              </ul>
+              <a
+                class="icon-link"
+                href="https://github.com/Gokul-E/weather-app-react-js.git"
+              >
+                <svg class="bi" aria-hidden="true">
+                  <use xlink:href="#box-seam"></use>
+                </svg>
+                Visit link
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <hr class="border-info mb-3" />
+    <!-- <hr class="border-info mb-3" /> -->
 
     <!-- <about me > -->
-    <div class="aboutme">
-      <!-- <div>
-      <h6>
+    <div class="aboutme" id="about-section">
+      <!-- <div> -->
+      <!-- <h6> -->
+      <!-- <p>
         If you'd like to collaborate or learn more about my work, feel free to
         reach out to me through the contact details below
-      </h6>
-    </div> -->
-      <a class="icon-link" href="mailto:gokulkg593@gmail.com">
+      </p> -->
+      <!-- </h6> -->
+      <!-- </div> -->
+      <a class="icon-link-1" href="mailto:gokulkg593@gmail.com">
         <i class="fa-solid fa-envelope"></i>
         Mail
       </a>
-      <a class="icon-link" href="https://www.linkedin.com/in/gokul-e-15b836154">
+      <a
+        class="icon-link-1"
+        href="https://www.linkedin.com/in/gokul-e-15b836154"
+      >
         <i class="fa-brands fa-linkedin"></i>
         LinkedIn
       </a>
-      <a class="icon-link" href="https://github.com/Gokul-E">
+      <a class="icon-link-1" href="https://github.com/Gokul-E">
         <i class="fa-brands fa-github"></i>
         github
       </a>
 
-      <a class="icon-link" href="tel:+919047441766">
+      <a class="icon-link-1" href="tel:+919047441766">
         <i class="fa-solid fa-phone"></i>
         Contact
       </a>
     </div>
+    <a href="#" class="up-arrow" id="scroll-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
 
     <!-- footer -->
 
